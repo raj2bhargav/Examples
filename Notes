@@ -1,0 +1,34 @@
+
+Locators
+========
+1. id
+2. name
+3. classname
+4. linktext
+5. partial linktext
+6. Xpath
+7. CSS
+
+
+CSS --> tag[attribute = value]
+		tag.class[attribute = 'value']
+		tag:contains("inner text")
+		
+
+XPATH --> //tag[@attribute = 'value']
+	  --> //*[contains(@attribute,'value')]
+	  --> //*[@attribute='value' or @attribute='value']
+	  --> //tag[@attribute='value' and @attribute='value']
+	  --> //tag[starts-with(@attribute,'value')]
+	  --> //tag[text()='value']
+	  --> //*[@type='text']//following::input
+	  --> //*[text()='Enterprise Testing']//ancestor::div
+	  --> //*[@id='java_technologies']//child::li
+	  --> //*[@type='submit']//preceding::input
+	  --> //*[@type='submit']//following-sibling::input
+	  --> //*[@id='rt-feature']//parent::div
+	  --> //*[@type='password']//self::input
+	  --> //*[@id='rt-feature']//descendant::a
+	  
+
+
